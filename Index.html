@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/slyle.css" />
+        <title>Cats food</title>
+    </head>
+    <body class="container container__fixed">
+        <h1 class="header container__header">Ты сегодня покормил кота?</h1>
+        <section
+            class="list container__list container__flex container__fixed"
+            id="goods"
+        >
+            <div class="item list__item">
+                <article class="bag item__bag">
+                    <span class="rectangle bag_rectangle"></span>
+                    <p class="text bag__text bag__text_default">
+                        Сказочное заморское яство
+                    </p>
+                    <p class="text bag__text bag__text_selected">
+                        Котэ не одобряет?
+                    </p>
+                    <h2 class="title bag__title">Нямушка</h2>
+                    <h3 class="sub-title bag__sub-title">с фуа-гра</h3>
+                    <p class="quantity bag__quantity">
+                        <span class="quantity_num">10</span>
+                        порций <br />
+                        мышь в подарок
+                    </p>
+                    <img
+                        src="css/images/cat.png"
+                        alt="cat_photo"
+                        class="img bag__img"
+                    />
+                    <div class="weight-label bag__weight-label">
+                        <p class="text-weight bag__text-weight">0,5</p>
+                        <p
+                            class="text-weight bag__text-weight text-weight_text"
+                        >
+                            кг
+                        </p>
+                    </div>
+                </article>
+                <p
+                    class="text-description item__text-description item__text-description_default"
+                >
+                    Чего сидишь? Порадуй котэ,
+                    <a
+                        href="#"
+                        class="text-description item__text-description item__text-description_buy"
+                        >купи.</a
+                    >
+                </p>
+                <p
+                    class="text-description item__text-description item__text-description_selected"
+                >
+                    Печень утки разварная с артишоками.
+                </p>
+                <p
+                    class="text-description item__text-description item__text-description_disabled"
+                >
+                    Печалька, с фуа-гра закончился.
+                </p>
+            </div>
+            <div class="item selected list__item">
+                <article class="bag item__bag">
+                    <span class="rectangle bag_rectangle"></span>
+                    <p class="text bag__text bag__text_default">
+                        Сказочное заморское яство
+                    </p>
+                    <p class="text bag__text bag__text_selected">
+                        Котэ не одобряет?
+                    </p>
+                    <h2 class="title bag__title">Нямушка</h2>
+                    <h3 class="sub-title bag__sub-title">с рыбой</h3>
+                    <p class="quantity bag__quantity">
+                        <span class="quantity_num">40</span>
+                        порций <br />
+                        <span class="quantity_num">2</span> мыши в подарок
+                    </p>
+                    <img
+                        src="css/images/cat.png"
+                        alt="cat_photo"
+                        class="img bag__img"
+                    />
+                    <div class="weight-label bag__weight-label">
+                        <p class="text-weight bag__text-weight">2</p>
+                        <p
+                            class="text-weight bag__text-weight text-weight_text"
+                        >
+                            кг
+                        </p>
+                    </div>
+                </article>
+                <p
+                    class="text-description item__text-description item__text-description_default"
+                >
+                    Чего сидишь? Порадуй котэ,
+                    <a
+                        href="#"
+                        class="text-description item__text-description item__text-description_buy"
+                        >купи.</a
+                    >
+                </p>
+                <p
+                    class="text-description item__text-description item__text-description_selected"
+                >
+                    Головы щучьи с чесноком да свежайшая сёмгушка.
+                </p>
+                <p
+                    class="text-description item__text-description item__text-description_disabled"
+                >
+                    Печалька, с рыбой закончился.
+                </p>
+            </div>
+            <div class="item disabled list__item">
+                <article class="bag item__bag">
+                    <span class="rectangle bag_rectangle"></span>
+                    <p class="text bag__text bag__text_default">
+                        Сказочное заморское яство
+                    </p>
+                    <p class="text bag__text bag__text_selected">
+                        Котэ не одобряет?
+                    </p>
+                    <h2 class="title bag__title">Нямушка</h2>
+                    <h3 class="sub-title bag__sub-title">с курой</h3>
+                    <p class="quantity bag__quantity">
+                        <span class="quantity_num">100</span>
+                        порций <br />
+                        <span class="quantity_num">5</span> мышей в подарок
+                        <br />
+                        заказчик доволен
+                    </p>
+                    <img
+                        src="css/images/cat.png"
+                        alt="cat_photo"
+                        class="img bag__img"
+                    />
+                    <div class="weight-label bag__weight-label">
+                        <p class="text-weight bag__text-weight">5</p>
+                        <p
+                            class="text-weight bag__text-weight text-weight_text"
+                        >
+                            кг
+                        </p>
+                    </div>
+                </article>
+                <p
+                    class="text-description item__text-description item__text-description_default"
+                >
+                    Чего сидишь? Порадуй котэ,
+                    <a
+                        href="#"
+                        class="text-description item__text-description item__text-description_buy"
+                        >купи.</a
+                    >
+                </p>
+                <p
+                    class="text-description item__text-description item__text-description_selected"
+                >
+                    Филе из цыплят с трюфелями в бульоне.
+                </p>
+                <p
+                    class="text-description item__text-description item__text-description_disabled"
+                >
+                    Печалька, с курой закончился.
+                </p>
+            </div>
+        </section>
+        <script src="scripts/jquery-3.5.1.min.js"></script>
+        <script src="scripts/component.js"></script>
+        <script src="scripts/goods.js"></script>
+    </body>
+</html>
