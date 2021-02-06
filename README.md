@@ -2,7 +2,7 @@
 Большую часть кода написано на HTML и CSS, на JQ только логика.
 Скошеный угл бл реализован с помощью clip-pat и наложения еще одного прямоугольника.
 
-![screenshot of sample](css/images/screen_20sample.png)
+![screenshot of sample](https://github.com/Ansya13/Cats-test-task/blob/main/css/images/screen_sample.png?raw=true)
 
 #### [Click on me ... <img align="center" alt="HTML5" width="40px" src="https://cdn.icon-icons.com/icons2/1004/PNG/512/social_flags_logo_github_icon-icons.com_75539.png"/>][project]
 
