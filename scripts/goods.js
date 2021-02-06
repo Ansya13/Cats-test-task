@@ -3,11 +3,9 @@ class Goods extends Component{
         super(goodsId);
         this.goodsItem = this.goodsList.find(".list__item:not(.disabled)");
         this.selectedGoodsItem = this.goodsList.find(".list__item.selected");
-        console.log(this.selectedGoodsItem);
         this.buyBtn = this.goodsList.find(".item__text-description_buy");
 
         this.createEvents();
-        ;
     }
 
     goodsSelect(event){
