@@ -1,0 +1,255 @@
+@font-face {
+    font-family: "Exo2.0";
+    src: url(.fonts/Exo2.0-Thin.otf);
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.5),
+            transparent,
+            rgba(0, 0, 0, 0.5)
+        ),
+        url(./images/background_pice.jpg);
+    position: relative;
+}
+.container__fixed {
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 679px;
+}
+.container__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header {
+    font-family: "Exo2.0", sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    padding: 48px 0 26px;
+}
+.list {
+    margin: 0 auto;
+}
+.item {
+    position: relative;
+}
+.bag {
+    width: 328px;
+    height: 488px;
+    background-color: #1698d9;
+    border-radius: 14px;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+    position: absolute;
+}
+
+.rectangle {
+    position: absolute;
+    top: 4px;
+    /* соответствует ширине border */
+    left: 4px;
+    /* соответствует ширине border */
+    width: 320px;
+    /* container width - (ширина border * 2) */
+    height: 480px;
+    /* container height - (ширина border * 2) */
+    background-color: #f2f2f2;
+    border-radius: 11px;
+    clip-path: polygon(14.7% 0, 100% 0, 100% 100%, 0 100%, 0 9.7%);
+}
+
+.text {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+    padding: 24px 49px 0 49px;
+    position: absolute;
+}
+.bag__text_selected {
+    display: none;
+}
+.title {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: #000;
+    padding: 55px 49px 0 49px;
+    position: absolute;
+}
+
+.sub-title {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: #000;
+    padding: 104px 49px 0 49px;
+    position: absolute;
+}
+.quantity {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    padding: 144px 49px 0 49px;
+    position: absolute;
+}
+.quantity_num {
+    font-weight: 800;
+    padding: 0px;
+}
+.img {
+    position: absolute;
+    padding: 215px 0 0 0;
+    border: 4px solid transparent;
+    border-radius: 14px;
+}
+.weight-label {
+    width: 82px;
+    height: 82px;
+    background: #1698d9;
+    border-radius: 50%;
+    position: relative;
+}
+.bag__weight-label {
+    margin: 385px 0 0 225px;
+}
+
+.text-weight {
+    width: 100%;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+    color: #fff;
+    position: absolute;
+    display: block;
+    text-align: center;
+    padding: 8px 0px 0px 0px;
+}
+.text-weight_text {
+    font-size: 21px;
+    padding: 50px 0px 0px 0px;
+}
+
+.text-description {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    text-align: center;
+    width: 328px;
+    top: 495px;
+    align-items: flex-end;
+    position: relative;
+}
+
+.item__text-description_buy {
+    top: 0;
+    color: #1698d9;
+    border-bottom: 1px dashed #1698d9;
+    text-decoration: none;
+}
+
+.item__text-description_selected {
+    display: none;
+}
+.item__text-description_disabled {
+    color: #ffff66;
+    display: none;
+}
+.bag:hover {
+    background-color: #2ea8e6;
+}
+.bag:hover .weight-label {
+    background: #2ea8e6;
+}
+.item__text-description_buy:hover {
+    color: #2ea8e6;
+    border-bottom: 1px dashed #2ea8e6;
+}
+
+.selected .item__bag {
+    background-color: #d91667;
+}
+
+.selected:hover .item__bag {
+    background-color: #e62e7a;
+}
+.selected:hover .bag__text_selected {
+    color: #e62e7a;
+    font-size: 16px;
+}
+.selected .bag__weight-label {
+    background: #d91667;
+}
+
+.selected:hover .bag__weight-label {
+    background: #e62e7a;
+}
+.selected .item__text-description {
+    display: none;
+}
+
+.selected .item__text-description_selected {
+    display: block;
+}
+
+.disabled .item__bag {
+    background-color: #b3b3b3;
+}
+
+.disabled:hover .item__bag {
+    background-color: #b3b3b3;
+}
+.disabled .text,
+.disabled .title,
+.disabled .sub-title {
+    opacity: 0.5;
+}
+.disabled .bag__img {
+    opacity: 0.5;
+}
+.disabled .bag__weight-label {
+    background: #b3b3b3;
+}
+.disabled:hover .bag__weight-label {
+    background: #b3b3b3;
+}
+
+.disabled .item__text-description {
+    display: none;
+}
+.disabled .item__text-description_disabled {
+    display: block;
+}
+
+@media screen and (max-width: 1030px) {
+    .item {
+        min-height: 520px;
+        margin: 0px 93px 25px 93px;
+    }
+    .item:first-child {
+        margin: 0px 350px 25px 350px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .item {
+        width: auto;
+        margin: 0px 215px 25px 215px;
+    }
+    .item:first-child {
+        margin: 0px 215px 25px 215px;
+    }
+}
